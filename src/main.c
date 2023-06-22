@@ -147,18 +147,18 @@ void SVC_Handler_Main( unsigned int *svc_args )
   {
     case 0:  
 			GPIOB->ODR |= LED1_ON;
-		break;
-		case 1:
+	break;
+	case 1:
 			GPIOB->ODR |= LED2_ON;
     break;
-		case 2:
+	case 2:
 			GPIOB->ODR |= LED3_ON;
-		break;
-		case 3:
+	break;
+	case 3:
 			GPIOB->ODR = 0U;
-		break;
+	break;
     default:    /* unknown SVC */
-      break;
+    break;
   }
 }
 
